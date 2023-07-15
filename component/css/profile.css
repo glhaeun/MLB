@@ -1,0 +1,323 @@
+.content-wrapper {
+    display: flex;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+  
+.user-information {
+    /* margin-left: 3.5rem; */
+    padding: 24px;
+    border: 1px solid #2222227b;
+    width: 100%;
+    background-color: white;
+}
+  
+.label {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+  
+.field {
+    font-size: 12px;
+    margin: 0;
+    color: #1c1c1c;
+}
+  
+.user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+  
+.user-information__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+}
+  
+.user-information__container__child {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.user-information h3  {
+    font-size: 36px;
+
+}
+
+.user-information p {
+    font-size: 16px;
+
+}
+
+
+
+#err_nomor {
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+#err_password {
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+#err_cpassword {
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.error input{
+    border-color: red;
+    border-width: 2px;
+}
+
+.error span{
+    color: red;
+}
+
+span.error{
+    color: red;
+}
+
+/*media screen*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #header {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:  1099px){
+    #header{
+        width:100%;
+        }
+}
+
+
+@media screen and (min-width:645px) and (max-width: 768px) {
+    #header {
+        width: 100%;
+    }
+
+    .user-information h3  {
+        font-size: 30px;
+    
+    }
+
+    .user-information p  {
+        font-size: 15px;
+    
+    }
+
+    .user-information{
+        margin-left: 0rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:  425px) {
+    #header {
+        width: 100%;
+        padding: 0px 0px;
+        flex-direction: column;
+
+    }
+    .user-information{
+        margin-left: 0rem;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+}
+
+ @media screen and (max-width:  320px){
+    #header{
+        width: 100%;
+    }
+
+
+    footer{
+        width: 100%;
+        justify-content:center;
+    }
+
+    .social-links img{
+        width: 20px;
+        height: 20px;
+    }
+
+ }
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #header {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:  1099px){
+    #header{
+        width:100%;
+        }
+}
+
+
+
+@media screen and (min-width:375px) and (max-width: 425px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: space-around;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:320px) and (max-width: 375px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: flex-start;
+    }
+    #header li {
+        padding: 10px;
+    }
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+ 
+
+}
+
+ 
+@media screen and (min-width:425px) and (max-width: 645px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: space-around;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+    .user-information h3  {
+        font-size: 30px;
+    
+    }
+
+    .user-information p  {
+        font-size: 15px;
+    
+    }
+
+    .user-information{
+        margin-left: 0rem;
+    }
+
+
+}
+
+@media screen and (max-width: 460px) {
+    .user-information__container {
+        display:block;
+        height: 330px;
+    }
+
+ 
+
+    .child2 {
+        margin-top:20px;
+    }
+
+    .user-information {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 659px){
+
+    
+    footer{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .section-p1{
+        padding: 20px 40px;
+    }
+
+}
+
+@media screen and (min-width:425px) and (max-width: 659px)
+{
+    .section-p2{
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+    .section-p2{
+        padding: 10px 10px;
+    }
+
+    .user-information h3 {
+        font-size: 16px;
+        margin:0;
+    }
+
+    .side__menu h3 {
+        font-size: 12px;
+        width: 80px;
+        padding: 10px 10px;
+    }
+
+
+}

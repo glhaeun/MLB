@@ -1,0 +1,27 @@
+textarea { width: 100%; }
+
+        .img-container .main-img img {
+            height: 20rem;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .img-container .sub-img {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1rem 0;
+            justify-content: center;
+
+        }
+        .img-container .sub-img img{
+            height: 7rem;
+            width: 8rem;
+            border: var(--border);
+            cursor: pointer;
+            border-radius: .5rem;
+            transition: .2s linear;
+        }
+
+        .img-container .sub-img img:hover{
+            transform: scale(1.2);
+        }

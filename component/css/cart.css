@@ -1,0 +1,620 @@
+#buttoncheckout{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, black, #222);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+.section-p2 {
+    padding: 40px 80px;
+}
+
+#circle1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle 900px at -2.9% 0.2%, rgba(249,109,0, 0.543) 0%, rgb(249,109,0, 0.543) 15.9%, rgb(249,109,0, 0.543) 15.9%, rgb(249,109,0, 0.543) 24.4%, rgb(255, 255, 255) 24.5%, rgb(255, 255, 255) 66%);
+    animation-name: circles;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+#cart {
+    margin-top: 4rem;
+}
+
+#cart table {
+    width: 100%;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border-collapse:separate;
+    border-radius:6px;
+    border-spacing: 0 10px;
+    border:solid rgba(216, 241, 230, 1) 1px;
+
+    
+    background-color:#f9f6f6;
+    box-shadow: 0px 5px 12px -12px rgba(0,0,0,0.5);
+
+
+}
+
+table {
+    border-radius: 0.5rem;
+
+}
+
+thead {
+    font-weight: bold;
+    background: #222831; 
+    color: white;
+}
+
+table, th, td{
+    margin: 10px;
+    padding: 10px;
+}
+
+tbody .tablerow {
+    background: white;
+    box-shadow: 0px 5px 12px -12px rgba(0,0,0,0.5);
+}
+
+
+thead td{
+    color: white;
+}
+td {
+    text-align: center;
+    margin: 20px 20px;
+    color:black;
+}
+
+#cart table img {
+    cursor: pointer;
+    max-width: 100px;
+}
+
+
+
+td.delete-cart , td.image{
+    cursor: pointer;
+    width: 100px;
+    align-content: center;
+    align-items: center;
+}
+
+td.nama {
+    width: 350px;
+}
+
+td.price, td.quant {
+   margin-left: 20px;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.total h4 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin-right: 35px;
+    float: right;
+    left: 15%;
+}
+
+/*cart bawah */
+
+.circle {
+    position: absolute;
+}
+
+@keyframes circles {
+    0% {
+        transform: (translateX(-50%))
+    };
+    25% {
+        transform: (translateX(-30%))
+    };
+    50% {
+        transform: (translateX(0%))
+    };
+    75% {
+        transform: (translateX(-30%))
+    };
+    100% {
+        transform: (translateX(-50%))
+    };
+
+}
+
+#circle2 {
+  background: radial-gradient(circle  650px at 92.9% 50.2%, rgba(17, 0, 255, 0.543) 0%, rgb(17, 0, 255, 0.543) 15.9%, rgb(17, 0, 255, 0.543) 15.9%, rgb(17, 0, 255, 0.543) 24.4%, rgb(255, 255, 255) 24.5%, rgb(255, 255, 255) 66%);
+  width: 100%;
+  height: 100%;
+}
+
+#circle3 {
+    background: radial-gradient(circle  450px at 92.9% 60.2%, rgba(17, 0, 255, 0.543) 0%, rgb(17, 0, 255, 0.543) 15.9%, rgb(17, 0, 255, 0.543) 15.9%, rgb(17, 0, 255, 0.543) 24.4%, rgb(255, 255, 255) 24.5%, rgb(255, 255, 255) 66%);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+  }
+
+#cart-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.no-button {
+    border: 1px solid #e2e9e1;
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 12px -12px rgba(0,0,0,0.5);
+    background-color:white;
+    
+}
+
+
+
+
+
+#data-customer input, #data-customer select{
+    padding: 4px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: .5rem;
+    border: 1px solid #444;
+    width: 60%;
+
+}
+
+#data-customer label {
+    display: inline-block;
+    width: 28%;
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+
+#cart a {
+    color: white;
+    text-decoration: none;
+}
+
+#cart a.delete-button {
+    color:black;
+    text-decoration: none;
+}
+
+#buttoncheckout{
+    width: 65%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, black, #222);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+/*subtotal*/
+
+#totalCart {
+    width: 30rem;
+    min-width: 300px;
+    border: 1px solid #e2e9e1;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0px 5px 12px -12px rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    background-color:white;
+}
+
+#totalCart table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem; 
+    text-align: left;
+}
+#totalCart table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 1rem;
+    font-size: 1.3rem;
+    
+}
+
+.cartTotal {
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 799px) {
+    #banner {
+        height: 70vh;
+        padding: 0 80px;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #banner {
+        background-position: 50%;
+
+    }
+}
+
+@media screen and (max-width: 755px) {
+    #header {
+        width: 82vh;
+    }
+
+    #banner 
+    {
+        background-position: 50%;
+    }
+
+    #description,#product-home, #callactionbanner,
+    #newsletter, footer{
+        width: 90%;
+        margin-left: 30px;    }
+}
+
+@media screen and (max-width:  475px) {
+    #header {
+        width: 140vh;
+    }
+    #banner {
+        width: 140vh;
+    }
+    #description,#product-home, #callactionbanner,
+    #newsletter, footer{
+        width: 155%;
+        margin-left: 30px;    }
+}
+
+
+@media screen and (max-width:  400px) {
+    #header {
+        width: 160vh;
+    }
+    #banner {
+        width: 160vh;
+    }
+    #description,#product-home, #callactionbanner,
+    #newsletter, footer {
+       width: 200%;
+       margin-left: 35px;
+    }
+}
+
+.nama span { 
+    overflow-wrap: break-word;
+
+}
+
+/*media query*/
+
+
+@media screen and (min-width: 768px) and (max-width: 845px) {
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:  1099px){
+    #header{
+        width:100%;
+        }
+
+}
+
+
+@media screen and (min-width:645px) and (max-width: 768px) {
+    #header {
+        width: 100%;
+    }
+
+    .section-p2 {
+        padding: 40px 60px;
+    }
+
+    table td, table p{
+        font-size: 14px;
+    }
+
+    table {
+        margin: 0px;
+    }
+
+
+}
+
+@media screen and (max-width:  425px) {
+    #header {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+}
+
+
+@media screen and (min-width:425px) and (max-width: 645px) {
+    #header {
+        width: 100%;
+        padding: 0px 0px;
+        justify-content: space-around;
+    }
+
+    #header li {
+        padding: 10px;
+    }
+      .section-p2 {
+        padding: 40px 20px;
+    }
+
+    table td, table p{
+        font-size: 12px;
+    }
+
+    table {
+        margin: 0px;
+    }
+
+    table img {
+        width: 75px;
+    }
+
+    #data-customer, .no-button, #totalCart {
+        width: 425px;
+    }
+
+    .no-button, #totalCart {
+        padding: 1rem;
+    }
+
+    #totalCart table td {
+        font-size: 16px;
+    }
+
+    #data-customer label {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    #data-customer input {
+        font-size: 14px;
+    }
+
+    #cart table td {
+        padding: 5px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    #header {
+        width: 100%;
+    }
+
+    #header a {
+        font-size: 8px;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+
+}
+
+
+@media screen and (min-width:375px) and (max-width: 425px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: space-around;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+    #cart.section-p2{
+        padding: 20px 20px;
+    }
+
+    #cart td, #cart span {
+        font-size: 12px;
+    }
+   
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+    #cart img {
+        width: 50px;
+    }
+
+    #cart td {
+        padding: 10px 10px;
+    }
+
+    #table, #totalCart table {
+        padding: 0;
+        margin:0;
+    }
+
+    #data-customer label {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #data-customer input {
+        font-size: 12px;
+    }
+    
+
+    #data-customer, .no-button, #totalCart {
+        width: 300px;
+    }
+
+    .no-button , #totalCart{
+        padding: 1rem;
+    }
+
+    #totalCart table td, #totalCart h3 {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (min-width:320px) and (max-width: 375px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: flex-start;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+    #cart.section-p2{
+        padding: 10px 10px;
+    }
+
+    #cart td, #cart span {
+        font-size: 12px;
+    }
+   
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+    #cart img {
+        width: 50px;
+    }
+
+    #cart td {
+        padding: 5px 5px;
+        margin: 5px;
+    }
+
+    #table, #totalCart table {
+        padding: 0;
+        margin:0;
+    }
+
+    #data-customer label {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    #data-customer input {
+        font-size: 12px;
+    }
+
+    #data-customer, .no-button, #totalCart {
+        width: 300px;
+    }
+
+    .no-button {
+        padding: 1rem;
+    }
+
+    #totalCart table td, #totalCart h3 {
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:320px) and (max-width: 375px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: flex-start;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+ 
+
+}
+ 
+
+
+@media screen and (max-width: 1130px) {
+    #cart-bottom{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 659px){
+
+    
+    footer{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .section-p1{
+        padding: 20px 40px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+}

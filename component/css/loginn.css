@@ -1,0 +1,581 @@
+.input-groups {
+    width: 300px;
+    min-width: 200px;
+}
+
+.innertext {
+    text-align: center;
+    
+}
+
+label {
+    cursor: pointer;
+}
+
+.innertext label {
+    color:#777; 
+    font-size: 12px; 
+    margin-bottom: 10px;
+}
+
+.check-box {
+    margin: 10px 0; 
+}
+
+
+#heading {
+    font-weight: bold;
+    font-style: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero{
+    width: 100%;
+    height: 88.7vh;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: contain;
+} 
+
+.form-box{
+    top: 8%;
+    min-width: 250px;
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;   
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .6rem 1.1rem rgba(0,0,0,0.1);
+
+ 
+}
+
+.button-box {
+    width: 220px;
+    margin: 0 auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #55555524;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 0;
+    position: relative;
+    color: #909090;  
+} 
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, black, #222);
+    border-radius: 30px;
+    transition: transform 0.5s;
+}
+
+
+.form-box form {
+    max-width: 300px; 
+    padding: 0 20px;
+    top: 80px;
+    position: absolute;
+    transition: transform 0.1s;
+
+}
+
+
+
+form input {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    font-size:10px;
+    height: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: black;
+    
+    
+   border-radius: 0.5rem;
+}
+
+.input-field{
+    
+    border: 1px solid #444;
+}
+
+form .submit-btn {
+    width: 70%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, black, #222);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+}
+
+
+.innercheckbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.innercheckbox span {
+    font-size: 14px;
+    color: #000;
+    vertical-align: center;
+
+}
+
+.innercheckbox input {
+   
+    width:100px;
+    height: 16px;
+}
+
+div.innertext {
+    vertical-align: center;
+}
+
+#heading {
+    font-weight: bold;
+    font-style: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+#login {    
+    left: 25px;
+}
+
+
+#register {
+    left: -380px;
+}
+
+
+#register .check-box {
+    width: 50px;
+    margin: 20px 0 20px 0;
+}
+
+#register span {
+    color: #777;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
+    
+}
+
+.form-control  {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-control.success input{
+    border: 2px solid green ;
+}
+
+.form-control.error input{
+    border: 2px solid red ;
+
+}
+
+
+.form-control.normal input{
+    border: 2px solid #ccc ;
+
+}
+
+.form-control.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+
+.form-control.error i.fa-circle-exclamation{
+visibility: visible;
+color: red;
+}
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    right: 0.5rem;
+    top: 30px;
+    visibility: hidden;
+}
+
+.form-control small {
+    font-size: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+.form-control #datemessage {
+    visibility: visible;
+}
+
+
+.submitbutton, .delete-button,
+.option-button {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+}
+
+.submitbutton{
+    background: linear-gradient(to right, black, #222);
+    height: 50px;
+}
+
+
+.content {
+    width: calc(100%-200px);
+    padding: 0 10px 0 20px;
+    height: 100%;
+}
+
+.tnc-head {
+    padding: 20px 0;
+}
+.tnc-body {
+    height: calc(100% - 120px);
+    overflow: auto;
+}
+
+.tnc-foot {
+    padding: 20px 0;
+    height: 70px
+}
+
+
+.popup .content {
+    position: absolute;
+    top:5%;
+    left:50%;
+    background-color: #fff;
+    transform: translate(-50%, -0%) scale(0.1);
+    width: 450px;
+    height: 500px;
+    z-index : 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 10%;
+
+
+}
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transform: translate(-50%, 10%) scale(1); 
+    visibility: visible;
+}
+
+/* footer */
+#newsletter {
+    margin-left: 55px; 
+    width: 500px;
+
+}
+input {
+    font-size: 30px;
+    width: 300px;
+    display: inline-block;
+    border: 1px thin lightgray;
+    
+    padding: 0 1.25em;
+}
+
+input::placeholder {
+    font-size: 18px;
+}
+
+input:hover {
+    border : 2px thick darkgray;
+}
+
+
+ button.innerbutton{
+    width: 50px;
+    background: none;
+    color: grey;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 15px;
+    top: 0;
+    right: 0;
+    padding: 0;
+} 
+
+
+
+@media screen and (max-width: 799px) {
+    #banner {
+        height: 70vh;
+        padding: 0 80px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    
+
+    form input {
+        width: 100%;
+        font-size:10px;
+        height: 20px;
+        border: 1px solid #ccc;
+    }
+}
+
+@media screen and (min-width:  1030px) {
+    #login {
+     left: 20px;
+    }
+ }
+
+ @media screen and (max-width:  320px){
+    #header{
+        width: 100%;
+    }
+
+    .form-box{
+        width: 300px;
+    }
+
+    footer{
+        justify-content:center;
+    }
+
+    .social-links img{
+        width: 20px;
+        height: 20px;
+    }
+
+ }
+
+/*  */
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #header {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:  1099px){
+    #header{
+        width:100%;
+        }
+}
+
+
+@media screen and (min-width:645px) and (max-width: 768px) {
+    #header {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:  425px) {
+    #header {
+        width: 100%;
+        padding: 0px 0px;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 50px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    #header {
+        width: 100%;
+    }
+
+
+    #footer {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:375px) and (max-width: 425px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: space-around;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:320px) and (max-width: 375px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: space-around;
+    }
+    #header li {
+        padding: 10px;
+    }
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+    #register {
+        left: -405px;
+    }
+ 
+
+
+}
+ 
+@media screen and (min-width:425px) and (max-width: 645px) {
+    #header {
+        width: 100%;
+        padding:0px 0px;
+        justify-content: space-around;
+    }
+    #header li {
+        padding: 10px;
+    }
+
+
+}
+
+  @media screen and (min-width:320px) and (max-width:375px) {
+    .form-box {
+        width: 300px;
+    }
+
+    .form-control{
+        width: 250px;
+    }
+    #login.input-groups{
+        max-width: 260px;
+        padding: 0 0;
+        
+    }
+
+    #forgot.input-groups{
+        max-width: 250px;
+        padding: 0 0;
+    }
+
+    #register.input-groups{
+        max-width: 280px;
+    }
+
+    #forgot {
+        left: 350px;
+    }
+    /* #login {
+        left:30px;
+    } */
+
+    .check-box{
+       margin: 10px 0;
+    }
+  }
+
+  
+@media screen and (max-width: 659px){
+
+    
+    footer{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .section-p1{
+        padding: 20px 40px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    footer{
+        margin: 0 0 0 0;
+        text-align: center;
+        display: block;
+    }
+}
