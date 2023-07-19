@@ -47,7 +47,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                         <label for="email">EMAIL</label>
-                        <input   name="email" type="text" class="form-control" id="email" placeholder="" value="<?=$fetch_profile['email']?>" <?php if ($status_edit == "yes"); else echo 'disabled'?> onkeyup="checkemail()" required>
+                        <input disabled   name="email" type="text" class="form-control" id="email" placeholder="" value="<?=$fetch_profile['email']?>" <?php if ($status_edit == "yes"); else echo 'disabled'?> onkeyup="checkemail()" required>
                     <span class="error" id="err_email"></span>
                         </div>
                         <div class="form-group col-md-6">
@@ -73,7 +73,7 @@
                         </div>
                         <div class="form-group col-md-6">
                         <label for="nomor">NOMOR HP</label>
-                        <input name="nomor" type="text" class="form-control" id="number" placeholder="" value="<?=$fetch_profile['number']?>"  <?php if ($status_edit == "yes"); else echo 'disabled'?>  onkeyup="checknomor()" required>
+                        <input disabled name="nomor" type="text" class="form-control" id="number" placeholder="" value="<?=$fetch_profile['number']?>"  <?php if ($status_edit == "yes"); else echo 'disabled'?>  onkeyup="checknomor()" required>
                         <span class="error" id="err_nomor" ></span>
                         </div>
                     </div>

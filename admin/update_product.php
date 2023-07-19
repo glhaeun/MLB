@@ -25,7 +25,7 @@
 </head>
         <?php include '../admin_component/php/connect.php';?>
         <?php include '../admin_component/php/flash_alert.php';?>
-        <?php include '../admin_component/php/logout.php';
+        <?php 
         $query = "SELECT type FROM products WHERE id = ?";
         $get_type = $connect->prepare($query);
         $get_type -> execute([$_GET['update']]);
@@ -33,7 +33,9 @@
         $type = implode($type);?>
 
 <body id="page-top">
-<?php include '../admin_component/php/script.php';?>
+<?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/rupiah.php';?>
+<?php include '../admin_component/php/lib/product/update.php';?>
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -85,13 +87,13 @@
 
                 <div class="img-container">
                 <div class="main-img">
-                    <img src="../img/<?= $fetch_products['image_a']; ?>" alt="" srcset="" id="MainImg">
+                    <img src="../img_upload/product/<?= $fetch_products['image_a']; ?>" alt="" srcset="" id="MainImg">
                 </div>
                 <div class="sub-img">
-                    <img src="../img/<?= $fetch_products['image_a']; ?>" alt="" srcset="" class="small-img">
-                    <img src="../img/<?= $fetch_products['image_b']; ?>" alt="" srcset="" class="small-img">
-                    <img src="../img/<?= $fetch_products['image_c']; ?>" alt="" srcset="" class="small-img">
-                    <img src="../img/<?= $fetch_products['image_d']; ?>" alt="" srcset="" class="small-img">
+                    <img src="../img_upload/product/<?= $fetch_products['image_a']; ?>" alt="" srcset="" class="small-img">
+                    <img src="../img_upload/product/<?= $fetch_products['image_b']; ?>" alt="" srcset="" class="small-img">
+                    <img src="../img_upload/product/<?= $fetch_products['image_c']; ?>" alt="" srcset="" class="small-img">
+                    <img src="../img_upload/product/<?= $fetch_products['image_d']; ?>" alt="" srcset="" class="small-img">
                 </div>
             </div>
                 <div class="form-row">

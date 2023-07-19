@@ -28,14 +28,15 @@
 </head>
 <?php include '../admin_component/php/connect.php';?>
 <?php include '../admin_component/php/flash_popup.php';?>
-<?php include '../admin_component/php/logout.php';
+<?php
 $query = "SELECT * FROM aboutpage";
 $show_content = $connect->prepare($query);
 $show_content -> execute();
 $fetch_content = $show_content->fetch(PDO::FETCH_ASSOC);?>
 
 <body id="page-top">
-<?php include '../admin_component/php/script.php';?>
+<?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/lib/aboutpage_update.php';?>
 
 
     <!-- Page Wrapper -->
@@ -96,15 +97,11 @@ $fetch_content = $show_content->fetch(PDO::FETCH_ASSOC);?>
                             </div>
                     </div>
                     <div class="form-group">
-                                <label for="title">Content 2 - Short Greetings</label>
-                                <input type="text" name="contentB" class="input--style-5"  value="<?=$fetch_content['contentB']?>">
-                    </div> 
-                    <div class="form-group">
-                                <label for="title">Content 3 - Catchy Phrase</label>
+                                <label for="title">Content 2 - Catchy Phrase</label>
                                 <input type="text" name="contentC" class="input--style-5"  value="<?=$fetch_content['contentC']?>">
                     </div> 
                     <div class="form-group mb-8">
-                    <label for="">Content 4 - About Brand</label>
+                    <label for="">Content 3 - About Brand</label>
                         <textarea name="contentD" style="width:100%;" id="contenteditor" cols="30" rows="5">
                         <?=$fetch_content['contentD']?></textarea>
                         </div>

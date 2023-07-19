@@ -12,7 +12,7 @@
                         ?>
                     <a class="nextpage-a" href="shopdet.php?nextpage=<?=$fetch_rec['id']?>">
                     <div class="slipper-wrapper slipper">
-                        <img src="../img/<?=$fetch_rec['image_a']?>" alt="img">
+                        <img src="../img_upload/product/<?=$fetch_rec['image_a']?>" alt="img">
                         <div class="slipper-info">
                             <p class="slippername"><?=$fetch_rec['name']?></p>
                             <p class="price"><?=rupiah($fetch_rec['price'])?></p>

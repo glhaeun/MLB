@@ -52,10 +52,12 @@
                                     <p style="color:black">Total Price: <?=rupiah($fetch_order['total_price'])?></p>
                                     <p style="color:black">Payment Method: <?=$fetch_order['method']?></p>
                                     <p style="color:black">Payment Status: <?=$fetch_order['payment_status']?></p>
+                                    <p style="color:black">Delivery Status: <?=$fetch_order['delivery_status']?></p>
                                     
 
                         <?php
                             if($fetch_order['total_products'] > 0) {
+                                
                                 $perpc_order =  explode (";", $fetch_order['details']); 
                                 $remove = array_pop($perpc_order);
                                 ?><div class="wrapper"><?php
@@ -64,7 +66,6 @@
                                     $qty = $value;
                                     $qty = substr($qty, strpos($qty, "-") + 1);  
                                     
-
                                     $query = "SELECT * FROM products WHERE id = $items";
                                     $get_product = $connect->prepare($query);
                                     $get_product -> execute();

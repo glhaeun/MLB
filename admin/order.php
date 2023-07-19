@@ -27,12 +27,14 @@
 
 </head>
 <?php include '../admin_component/php/connect.php';?>
-    <?php include '../admin_component/php/flash_alert.php';?>
-    <?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/flash_alert.php';?>
 
 
     <body id="page-top">
-    <?php include '../admin_component/php/script.php';?>
+    <?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/rupiah.php';?>
+    <?php include '../admin_component/php/lib/order/delete.php';?>
+
 <!-- Page Wrapper -->
 <div id="wrapper">
 <?php include '../admin_component/php/sidenav.php';?>
@@ -72,8 +74,9 @@
                                         <th>Qty</th>
                                         <th>Orders</th>
                                         <th>Total</th>
-                                        <th>Payment</th>
-                                        <th>Status</th>
+                                        <th>Payment Method</th>
+                                        <th>Payment Status</th>
+                                        <th>Delivery</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -100,7 +103,8 @@
                         <td><?=$fetch_orders['details']?></td>
                         <td><?=rupiah($fetch_orders['total_price'])?></td>
                         <td><?=$fetch_orders['method']?></td>
-                        <td><?=$fetch_orders['payment_status']?></td>   
+                        <td><?=$fetch_orders['payment_status']?></td>
+                        <td><?=$fetch_orders['delivery_status']?></td>   
                         <td><a href="update_order.php?update_order=<?=$fetch_orders['order_id']?>"><i class="fa-solid fa-pen-to-square"></i></a><a href="" class="delete-btn" data-toggle="modal" data-target="#deleteModal"><i class="fa-solid fa-trash"></i></a></td>
                 </tr>
                     <?php

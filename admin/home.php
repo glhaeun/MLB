@@ -25,7 +25,7 @@
 </head>
 <?php include '../admin_component/php/connect.php';?>
 <?php include '../admin_component/php/flash_popup.php';?>
-<?php include '../admin_component/php/logout.php';
+<?php
  $query = "SELECT * FROM landingpage";
  $show_content = $connect->prepare($query);
  $show_content -> execute();
@@ -33,7 +33,8 @@
  ?>
 
 <body id="page-top">
-<?php include '../admin_component/php/script.php';?>
+<?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/lib/homepage_update.php';?>
 
     <!-- Page Wrapper -->
     <div id="wrapper">

@@ -23,11 +23,12 @@
 </head>
     <?php include '../admin_component/php/connect.php';?>
     <?php include '../admin_component/php/flash_alert.php';?>
-    <?php include '../admin_component/php/logout.php';?>
 
     
 <body id="page-top">
-<?php include '../admin_component/php/script.php';?>
+    <?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/rupiah.php';?>
+    <?php include '../admin_component/php/lib/order/update.php';?>
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -96,6 +97,15 @@ while($fetch_order = $show_order->fetch(PDO::FETCH_ASSOC)){
                                     <option <?php if ("Pending" == trim($fetch_order['payment_status'])) echo "selected" ?>  value="Pending">Pending</option>
                                     </select>   
                          </div>
+                </div>
+                <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="method">Delivery Status</label>
+                            <select id="delivery-status" name="delivery-status" class="form-control" required>
+                            <option <?php if ("Preparing order" == trim($fetch_order['delivery_status'])) echo "selected" ?> value="Preparing order">Preparing order</option>
+                            <option <?php if ("Delivering to customer" == trim($fetch_order['delivery_status'])) echo "selected" ?>  value="Delivering to customer">Delivering to customer</option>
+                            <option <?php if ("Received" == trim($fetch_order['delivery_status'])) echo "selected" ?>  value="Received">Received</option>
+                            </select>                            </div>
                 </div>
                     <button type="submit" value="update_order" class="btn btn--radius-2 btn--blue" name="update_order">Update</button>
                     <a href="order.php" class="btn btn--radius-2 btn--blue">Cancel</a>

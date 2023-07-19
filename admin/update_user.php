@@ -25,12 +25,13 @@
     </head>
     <?php include '../admin_component/php/connect.php';?>
     <?php include '../admin_component/php/flash_alert.php';?>
-    <?php include '../admin_component/php/logout.php';?>
 
     
 
 <body id="page-top">
-<?php include '../admin_component/php/script.php';?>
+<?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/lib/user/update.php';?>
+
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -81,13 +82,13 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="email">Update Email</label>
-                                <input class="input--style-5" type="text" name="email"  placeholder="  product name" maxlength="100" value="<?= $fetch_user['email']; ?>">
+                                <input disabled class="input--style-5" type="text" name="email"  placeholder="  product name" maxlength="100" value="<?= $fetch_user['email']; ?>">
                             </div>
                     </div>
                     <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="number">Update Phone No.</label>
-                                <input class="input--style-5" type="text" name="number"  placeholder="  product name" maxlength="100" value="<?= $fetch_user['number']; ?>">
+                                <input disabled  class="input--style-5" type="text" name="number"  placeholder="  product name" maxlength="100" value="<?= $fetch_user['number']; ?>">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="dob">Update DOB</label>

@@ -23,13 +23,13 @@
     <link href="../admin_component/css/style.css" rel="stylesheet">
 </head>
 <?php include '../admin_component/php/connect.php';?>
-        <?php include '../admin_component/php/flash_alert.php';?>
-        <?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/flash_alert.php';?>
 
 
 <body id="page-top">
-<?php include '../admin_component/php/script.php';
-?>
+<?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/rupiah.php';?>
+<?php include '../admin_component/php/lib/product/add.php';?>
 
     <!-- Page Wrapper -->
     <div id="wrapper">

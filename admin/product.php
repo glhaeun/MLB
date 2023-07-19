@@ -29,7 +29,6 @@
 </head>
     <?php include '../admin_component/php/connect.php';?>
     <?php include '../admin_component/php/flash_alert.php';?>
-    <?php include '../admin_component/php/logout.php';?>
 <?php include '../admin_component/php/default.php';?>
 
 
@@ -43,7 +42,9 @@
 </style>
 
 <body id="page-top">
-<?php include '../admin_component/php/script.php';?>
+<?php include '../admin_component/php/logout.php';?>
+<?php include '../admin_component/php/rupiah.php';?>
+<?php include '../admin_component/php/lib/product/delete.php';?>
 
 
     <!-- Page Wrapper -->
@@ -119,7 +120,7 @@
                         <tr>
                             <td><?=$index?></td>
                             <td style="display: none;" class="id"><?=$fetch_product['id']?></td>
-                            <td><img style="max-width: 100px;" src="../img/<?=$fetch_product['image_a']?>" alt=""></td>
+                            <td><img style="max-width: 100px;" src="../img_upload/product/<?=$fetch_product['image_a']?>" alt=""></td>
                             <td><?=$fetch_product['name']?></td>
                             <td><?=$fetch_product['price']?></td>
                             <td><?=$fetch_product['type']?></td>

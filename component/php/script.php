@@ -503,9 +503,9 @@ if(isset($_GET['delete'])){
                 $status = "Completed";
             }
 
-            $query = "INSERT INTO orders (placed_on, customer_id, customer_name, number, address, total_products, total_price, details, method, payment_status) VALUES (?,?,?,?,?,?,?,?,?,?)";
+            $query = "INSERT INTO orders (placed_on, customer_id, customer_name, number, address, total_products, total_price, details, method, payment_status,delivery_status) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
             $insert_order = $connect->prepare($query);
-            $insert_order -> execute([$date, $customer_id, $name, $number, $address, $total_numberoforder, $total_order, $detail, $method, $status]);            
+            $insert_order -> execute([$date, $customer_id, $name, $number, $address, $total_numberoforder, $total_order, $detail, $method, $status, "Preparing order"]);            
             
             ?>
             <script>
@@ -569,26 +569,11 @@ if(isset($_GET['delete'])){
     if(isset($_POST['submit'])) {
 
         $nama = $_POST['nama'];
-        $email = $_POST['email'];
-        $nomor = $_POST['nomor'];
         $address = $_POST['address'];
         $dob = $_POST['dob'];
         $user_id = $_SESSION['user_id'];
         $changes = 0;
 
-        $check_user = $connect->prepare("SELECT * FROM users WHERE NOT email= ? AND email = ? ");
-        $check_user -> execute([$_SESSION['user_email'],$email]);
-
-      
-        $check_number = $connect->prepare("SELECT * FROM users WHERE NOT number= ? AND number = ? ");
-        $check_number -> execute([$_SESSION['user_number'],$nomor]);
-
-        if($check_user->rowCount()>0) {
-            flash('Error', 'This email has already been registered!', FLASH_ERROR);
-        } else {
-            if($check_number->rowCount()>0){
-                flash('Error', 'This number has already been registered!', FLASH_ERROR);
-            } else {
                 if (!empty($nama)){
                     $query = "UPDATE users SET name ='".$nama."' WHERE id = $user_id";
                     $updatedb= $connect->prepare($query);
@@ -631,11 +616,10 @@ if(isset($_GET['delete'])){
                             icon: "success",
                             });
                         </script>
-                        <?php                    }
+                        <?php                    
+                    }
 
 
-            }
-        }
          $status_edit = "no";
         echo '<meta http-equiv="refresh" content="1;url=profile.php" />';
     }

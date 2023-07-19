@@ -23,7 +23,7 @@
                 <td class="delete-cart"><a href="cart.php?delete=<?=$fetch_cart['id']?>" class="delete-button" >X</a></td>
                 <td class="nama">
                     <div class="img-container">
-                    <img src="../img/<?=$fetch_cart['image']?>"><span><?=$fetch_cart['name']?>
+                    <img src="../img_upload/product/<?=$fetch_cart['image']?>"><span><?=$fetch_cart['name']?>
                     </div>
                 </span>
                 </td>
